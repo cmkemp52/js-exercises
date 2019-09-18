@@ -24,21 +24,21 @@ console.log("");
 console.log("");
 console.log("");
 
-function printBox(w,h){
+function printBox(width,height){
     topbot = "";
-    for(i=0;i<w;i++){
+    for(i=0;i<width;i++){
         topbot += "* ";
     }
     mid = "";
-    for(i=0;i<w;i++){
-        if(i===0 || i===w-1){
+    for(i=0;i<width;i++){
+        if(i===0 || i===width-1){
             mid+="* ";
         } else{
             mid+="  ";
         }
     }
     console.log(topbot)
-    for(i=0;i<h-2;i++){
+    for(i=0;i<height-2;i++){
         console.log(mid);
     }
     console.log(topbot);
